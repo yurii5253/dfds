@@ -1,0 +1,22 @@
+{
+  "name": "ram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurii5253/dfds.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yurii5253/dfds/issues"
+  },
+  "homepage": "https://github.com/yurii5253/dfds#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  }
+}
