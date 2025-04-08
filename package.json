@@ -20,3 +20,15 @@
     "gulp": "^5.0.0"
   }
 }
+
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "gulp copy", 
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
