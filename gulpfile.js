@@ -21,15 +21,16 @@ function myTask(callback) {
   const gulp = require('gulp');
 
 exports.cloneFiles = async () => {
-  return gulp.src('app/*.html')   // Вибираємо всі .html файли з папки app
-    .pipe(gulp.dest('public'));   // Копіюємо їх у папку public
+  return gulp.src('app/*.html')  
+    .pipe(gulp.dest('public'));  
 };
   
 const gulp = require('gulp');
 
 gulp.task('copy', function () {
-  return gulp.src('src/**/*') // шлях до файлів, які потрібно копіювати
-    .pipe(gulp.dest('public')); // цільова папка
+  return gulp.src('src/**/*') 
+    .pipe(gulp.dest('public')); 
 });
+
 
   
