@@ -25,4 +25,11 @@ exports.cloneFiles = async () => {
     .pipe(gulp.dest('public'));   // Копіюємо їх у папку public
 };
   
+const gulp = require('gulp');
+
+gulp.task('copy', function () {
+  return gulp.src('src/**/*') // шлях до файлів, які потрібно копіювати
+    .pipe(gulp.dest('public')); // цільова папка
+});
+
   
