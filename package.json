@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/yurii5253/dfds#readme",
   "devDependencies": {
-    "gulp": "^5.0.0"
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-uglify": "^3.0.2"
   }
 }
-
