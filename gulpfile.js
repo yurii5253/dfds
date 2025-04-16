@@ -93,3 +93,20 @@ exports.minifyJS = async () => {
 
 // Комбінована задача, яка запускає обидві
 exports.minifyAll = gulp.parallel(exports.minifyCSS, exports.minifyJS);
+
+const gulp = require('gulp');
+
+// Копіювання HTML
+exports.copyHtml = async () => {
+  return gulp.src('app/**/*.html') // усі html, включно з підпапками
+    .pipe(gulp.dest('public'));
+};
+
+// Копіювання JS
+exports.copyJs = async () => {
+  return gulp.src('app/**/*.js') // усі js, включно з підпапками
+    .pipe(gulp.dest('public'));
+};
+
+// Загальна задача
+exports.copyAll = gulp.parallel(exports.copyHtml, exports.copyJs);
