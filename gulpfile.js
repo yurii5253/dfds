@@ -110,3 +110,25 @@ exports.copyJs = async () => {
 
 // Загальна задача
 exports.copyAll = gulp.parallel(exports.copyHtml, exports.copyJs);
+
+const { src, dest, series } = require('gulp');
+
+// Копіювання HTML
+function copyHtml() {
+  return src('app/**/*.html')
+    .pipe(dest('public'));
+}
+
+// Копіювання CSS
+function copyCss() {
+  return src('app/**/*.css')
+    .pipe(dest('public'));
+}
+
+// Копіювання JS
+function copyJs() {
+  return src('app/**/*.js')
+    .pipe(dest('public'));
+}
+
+exports.default = series(copyHtml, copyCss, copyJs);
