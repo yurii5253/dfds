@@ -132,3 +132,12 @@ function copyJs() {
 }
 
 exports.default = series(copyHtml, copyCss, copyJs);
+
+const { src, dest } = require('gulp');
+
+function copyHTML() {
+    return src('app/*.html')
+        .pipe(dest('public/'));
+}
+
+exports.default = copyHTML;
