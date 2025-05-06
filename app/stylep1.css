@@ -1,0 +1,13 @@
+/* app/stylep1.css */
+p {
+    background: linear-gradient(
+        45deg,
+        rgba(255, 0, 110, 1) 0%,
+        rgba(0, 110, 255, 1) 100%
+    );
+    background-blend-mode: multiply;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
